@@ -111,7 +111,7 @@ static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewContr
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return self.view.frame.size;
+    return CGSizeMake(self.view.frame.size.width, collectionView.frame.size.height);
 }
 
 #pragma mark - UIScrollViewDelegate
